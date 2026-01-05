@@ -1,2 +1,160 @@
-coucou
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Accueil</title>
+  <meta name="description" content="Portfolio de Mouhamadou Diene - Étudiant et développeur web">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0f172a;
+      color: #e5e7eb;
+    }
+
+    header {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header h1 span {
+      color: #38bdf8;
+    }
+
+    header p {
+      max-width: 600px;
+      color: #9ca3af;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    nav {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #020617;
+      background-color: #38bdf8;
+      padding: 0.7rem 1.4rem;
+      border-radius: 999px;
+      font-weight: bold;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    nav a:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #020617;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #9ca3af;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bonjour, je suis <span>Mouhamadou Diene</span></h1>
+  <p>
+    Étudiant en informatique et développeur web. Voici mon portfolio avec mes stages,
+    projets et mon CV.
+  </p>
+
+  <nav>
+    <a href="pageacceuil.html">Accueil</a>
+    <a href="cv.html">CV</a>
+    <a href="SIO1.html">Stage SIO1</a>
+    <a href="SIO2.html">Stage SIO2</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Mes projets</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Portfolio</h3>
+      <p>Site personnel en HTML et CSS pour présenter mon parcours.</p>
+    </div>
+
+    <div class="card">
+      <h3>Stage SIO1</h3>
+      <p>Découverte du monde professionnel et premières missions.</p>
+      <a href="SIO1.html">Voir →</a>
+    </div>
+
+    <div class="card">
+      <h3>Stage SIO2</h3>
+      <p>Approfondissement des compétences et projets concrets.</p>
+      <a href="SIO2.html">Voir →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Mouhamadou Diene — Portfolio
+</footer>
+
+</body>
+</html>
+
 
